@@ -1,5 +1,4 @@
 import React from 'react';
-import './Contact.css'; // Import your CSS file for styling
 import { FaLinkedin, FaGithub, FaEnvelope } from 'react-icons/fa'; // Using react-icons for better visuals
 
 function Contact() {
