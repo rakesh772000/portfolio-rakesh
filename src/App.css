@@ -1,0 +1,27 @@
+/* Adjusting the padding for main content */
+.App {
+  padding-top: 80px; /* Adjust this value based on the navbar height */
+}
+
+/* Ensure each section has proper spacing */
+.section {
+  padding: 80px 20px;
+  animation: fadeIn 1s ease-in;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.home {
+  padding: 20px;
+  min-height: 100vh;
+}
+
+/* Add custom padding to each section (like About, Skills, etc.) */
+.about, .skills, .projects, .contact {
+  padding: 80px 20px;
+}
+
+/* Optional: ensure smooth scrolling behavior */
+body {
+  scroll-behavior: smooth;
+}

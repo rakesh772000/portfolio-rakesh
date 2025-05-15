@@ -1,0 +1,53 @@
+.skills {
+  padding: 4rem 2rem;
+  background-color: var(--primary-bg);
+  color: var(--primary-text);
+}
+
+.skills h2 {
+  font-size: 2rem;
+  color: var(--accent-color);
+  margin-bottom: 1.5rem;
+}
+
+.skills-list {
+  list-style-type: none;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  gap: 1rem;
+}
+
+.skill-name {
+  font-size: 1.2rem;
+  background-color: var(--secondary-bg);
+  padding: 0.8rem;
+  border-radius: 5px;
+  text-align: center;
+  color: var(--primary-text);
+  font-weight: 500;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.skill-name:hover {
+  background-color: var(--accent-color);
+  color: var(--primary-bg);
+}
+
+@media screen and (max-width: 768px) {
+  .skills h2 {
+    font-size: 1.8rem;
+  }
+
+  .skills-list {
+    grid-template-columns: repeat(auto-fill, minmax(100%, 1fr));
+  }
+
+  .skills-list li {
+    margin-bottom: 0.8rem; /* Adds vertical spacing between skills */
+  }
+
+  .skill-name {
+    font-size: 1rem;
+  }
+}

@@ -1,0 +1,63 @@
+:root {
+  --primary-bg: #0d1117;             /* Deep navy */
+  --secondary-bg: #161b22;           /* Soft contrast panel */
+  --primary-text: #e6edf3;           /* Soft white for readability */
+  --accent-color: #58a6ff;           /* Cool blue accent */
+  --accent-hover: #1f6feb;           /* Darker blue on hover */
+  --font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: var(--primary-bg);
+  color: var(--primary-text);
+  font-family: var(--font-family);
+  scroll-behavior: smooth;
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+h1, h2 {
+  margin: 0.2em 0;
+}
+
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  background: var(--secondary-bg);
+}
+::-webkit-scrollbar-thumb {
+  background-color: var(--accent-color);
+  border-radius: 3px;
+}
+
+.App {
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+.section {
+  margin-top: 80px; /* space below navbar */
+  padding: 0 20px;
+  max-width: 900px;
+  margin-left: auto;
+  margin-right: auto;
+  animation: fadeIn 1s ease-in;
+}
+
+/* Fade In Animation */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* List Styling Reset */
+ul li {
+  list-style: none;
+}
